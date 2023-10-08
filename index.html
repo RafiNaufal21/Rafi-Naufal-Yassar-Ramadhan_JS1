@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Javascript</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"],
+input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    color: #777;
+    font-size: 18px;
+    margin: 10px 0;
+}
+  </style>
+
+</head>
+<body>
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#ifelse" class="nav-link scrollto"><i class="bx bx-user"></i> <span>If Else, Nested If</span></a></li>
+        <li><a href="#switch" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Switch Case</span></a></li>
+        <li><a href="#for" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>For Statement</span></a></li>
+        <li><a href="#while" class="nav-link scrollto"><i class="bx bx-server"></i> <span>While, Do While</span></a></li>
+        <li><a href="#function" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Function</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= home Section ======= -->
+  <section id="home" class="d-flex flex-column justify-content-center">
+    <div class="container" >
+      <h1>Rafi Naufal Y. R.</h1>
+      <p>Ayo Belajar Javascript <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+      
+    </div>
+  </section><!-- End home -->
+
+  <main id="main">
+
+    <!-- ======= ifelse Section ======= -->
+    <section id="ifelse" class="ifelse">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>ifelse</h2>
+          <p>Percabangan IF sendiri merupakan sebuah pemilihan statement yang akan dieksekusi berdasarkan suatu kondisi. Kondisi tidak hanya satu saja tapi bisa lebih. Lalu Terdapat Juga IF Bersarang (Nested If) merupakan percabangan IF dengan struktur yang lebih kompleks. Dimana didalam sebuah pernyataan IF terdapat pernyataan IF lainnya, Dengan kata lain terdapat sebuah kondisi IF didalam IF.</p>
+        </div>
+      </br>       
+      <div class="row">
+          <div class="col-lg-4">
+            <img src="https://tadabase-docs-assets.s3.amazonaws.com/uploads/images/gallery/2020-05/657-b782f3286409b190756c1b5dc8940285560896fa.gif" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Contoh If, Else & Nested If.</h3>
+          </div>
+          <div class="section">
+            <h2>Perbandingan X dan Y</h2>
+            <input type="number" id="ifElseX" placeholder="Masukkan nilai X">
+            <input type="number" id="ifElseY" placeholder="Masukkan nilai Y">
+            <p id="ifElseResult"></p>
+            <button onclick="perbandingan()">Cek Perbandingan</button>
+        </div>
+        </div>
+
+      </div>
+    </section><!-- End ifelse Section -->
+
+
+    <!-- ======= for Section ======= -->
+    <section id="for" class="for">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>for Statement</h2>
+          <p>Perulangan For adalah suatu bentuk proses pengulangan kegiatan pada suatu statement atau lebih secara berulang ulang-ulang selama yang dijadikan acuan tersebut terpenuhi dengan baik.</p> 
+         </div>
+
+         <div class="row">
+          <div class="col-lg-4">
+            <img src="https://blog.jitter.video/content/images/2021/12/Jitter-Pink-perfect-loop-cubes.gif" class="img-fluid" alt="">
+          </div>
+        </br>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Contoh Perulangan For</h3>
+          </div>
+          <div class="section">
+            <h2>Menampilkan Banyaknya Bintang</h2>
+            <input type="number" id="forLimit" placeholder="Masukkan jumlah bintang">
+            <p id="forResult"></p>
+            <button onclick="bintang()">Tampilkan Bintang</button>
+        </div>
+        </div>
+      </div>
+    </section><!-- End for Section -->
+
+    <!-- ======= switch Section ======= -->
+    <section id="switch" class="switch section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Switch Case</h2>
+          <p>Kondisi SWITCH CASE adalah percabangan kode program dimana kita membandingkan isi sebuah variabel dengan beberapa nilai. Jika proses perbandingan tersebut menghasilkan true, maka block kode program akan di proses.
+
+           Kondisi SWITCH CASE terdiri dari 2 bagian, yakni perintah SWITCH dimana terdapat nama variabel yang akan diperiksa, serta 1 atau lebih perintah CASE untuk setiap nilai yang akan diperiksa.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="https://www.petanikode.com/img/js/percabangan/demo-switch-case.gif" class="img-fluid" alt="">
+          </div>
+        </br>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Contoh Switch Case</h3>
+          </div>
+<div class="section">
+  <h2>Menentukan Nilai</h2>
+  <input type="number" id="switchInput" placeholder="Masukkan nilai (0-100)">
+  <p id="switchResult"></p>
+  <button onclick="ceknilai()">Cek Nilai</button>
+</div>
+
+      </div>
+
+        </div>
+    </section><!-- End switch Section -->
+
+    <!-- ======= while Section ======= -->
+    <section id="while" class="while">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>while </h2>
+<p>Perulangan while akan melakukan perulangan kalau kondisi (syarat) terpenuhi.
+
+  Sedangkan do/while melakukan perulangan dulu, kemudian memeriksa kondisinya atau sayaratnya.
+  
+  Kalau kondisi terpenuhi, maka do/while akan melanjutkan perulangan. Sebaliknya, dia akan berhenti (break).</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/015/023/079/original/ray-manis-largeowl.gif?1546758373" class="img-fluid" alt="">
+          </div>
+        </br>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Contoh Perulangan While </h3>
+          </div>
+          <!-- Bagian while loop -->
+    <div class="section">
+      <h2>Bilangan dari kecil ke besar</h2>
+      <input type="number" id="whileLimit" placeholder="Masukkan batas loop">
+      <p id="whileResult"></p>
+      <button onclick="kecilbesar()">Loop dengan While</button>
+  </div>
+  <div class="col-lg-8 pt-4 pt-lg-0 content">
+    <h3>Contoh Perulangan Do While</h3>
+  </div>
+  <!-- Bagian do while loop -->
+  <div class="section">
+      <h2>Bilangan Dari besar ke kecil</h2>
+      <input type="number" id="doWhileLimit" placeholder="Masukkan batas loop">
+      <p id="doWhileResult"></p>
+      <button onclick="besarkecil()">Loop dengan Do While</button>
+  </div>
+      </div>
+        
+
+      </div>
+    </section><!-- End while Section -->
+
+
+    <!-- ======= function Section ======= -->
+    <section id="function" class="function">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>function</h2>
+          <p>Dalam pemrograman, fungsi sering digunakan untuk membungkus program menjadi bagian-bagian kecil.
+
+            Logika program yang ada di dalam fungsi dapat kita gunakan kembali dengan memanggilnya.
+            
+            Sehingga tidak perlu menulis ulang. Fungsi adalah sub-program yang bisa digunakan kembali baik di dalam program itu sendiri, maupun di program yang lain.
+
+            Fungsi di dalam Javascript adalah sebuah objek. Karena memiliki properti dan juga method.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="https://cdn.dribbble.com/users/1473923/screenshots/3729010/fob_gif05_dribble.gif" class="img-fluid" alt="">
+          </div>
+        </br>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Contoh Penggunaan Function</h3>
+          </div>
+          <div class="section">
+            <h2>Penjumlahan Angka</h2>
+            <input type="number" id="num1" placeholder="Masukkan angka pertama">
+            <input type="number" id="num2" placeholder="Masukkan angka kedua">
+            <p id="functionResult"></p>
+            <button onclick="tambah()">Tambahkan Angka</button>
+        </div>
+      </div>
+
+      </div>
+    </section><!-- End function Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Rafi Naufal Yassar Ramadhan</h3>
+      <p>Selamat Belajar Javascript</p>
+      <div class="credits">
+        Designed by <a href="https://www.instagram.com/rafinaufal_y.r/">Rafi Naufal</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <script src="script.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
