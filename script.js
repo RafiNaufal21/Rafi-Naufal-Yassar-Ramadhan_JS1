@@ -33,7 +33,7 @@ function ceknilai() {
                 pesan = "Nilai Anda adalah B.";
                 break;
             case nilai >= 60 && nilai < 80:
-                pesan = "Nilai Acaa emang jelek makanya dapat C makanya belajar yang rajinn.";
+                pesan = "Acaa terbaik kok nilainya 100 buat aca.";
                 break;
             case nilai >= 40 && nilai < 60:
                 pesan = "Nilai Anda adalah D.";
